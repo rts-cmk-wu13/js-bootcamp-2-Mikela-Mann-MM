@@ -121,6 +121,12 @@ h1 {
 
 }
 
+.cart-item-background--last {
+    width: 281px;
+    background-color: #FFF;
+    margin-right: 150px;
+}
+
 .item-image {
     width: 104px;
     height: 134px;
@@ -143,7 +149,7 @@ h1 {
     color: #a7b0b4;
 }
 
-.item-price {
+.item-price, .item-price--total {
     font-size: 18px;
     font-weight: 700;
     color: #24282a;
@@ -175,6 +181,10 @@ h1 {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.quantity-selector--last {
+    display: none;
 }
 
 .button-right {
@@ -579,10 +589,23 @@ footer {
     border: 5px solid #fff;
 }
 
-/* hører til nyhedsbrevskvittering */
-.kvittering_headline {
-    margin-left: 500px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.button {
+    font-family: Rubik, "open sans";
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    border-radius: 30px;
+    background: linear-gradient(227deg, #ffe9e9 27.89%, #f9c4d2 83.86%);
+    box-shadow: 0 20px 40px 0 rgba(13, 18, 39, 0.3);
+    padding: 21px;
+    cursor: pointer;
+    width: 169px;
+    height: 60px;
 }
 
+.button--payment {
+    margin-left: 1125px;
+    padding: 21px 33px;
+    
+}

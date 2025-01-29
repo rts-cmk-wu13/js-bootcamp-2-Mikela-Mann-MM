@@ -51,6 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
         priceElement.textContent = `${newPrice} kr`;
     }
 
+    // Funktion til at opdatere en totalpris 
+    function totalPrice(priceElement) {
+        const newTotal = document.querySelector(".item-price");
+        const newPrice = pricePerItem * quantity;
+
+        // de tre som number uden kr string 
+        priceElement.textContent = `${newPrice} kr`;
+    }
+
+
+
     // Funktion til at fjerne et element fra kurven
     function removeItem(item) {
         item.remove();
