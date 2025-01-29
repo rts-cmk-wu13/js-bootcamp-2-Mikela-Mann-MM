@@ -49,22 +49,24 @@ document.addEventListener("DOMContentLoaded", () => {
     function updatePrice(priceElement, pricePerItem, quantity) {
         const newPrice = pricePerItem * quantity;
         priceElement.textContent = `${newPrice} kr`;
+        updateTotalPrice(); // Opdater totalprisen
     }
 
-    // Funktion til at opdatere en totalpris 
-    function totalPrice(priceElement) {
-        const newTotal = document.querySelector(".item-price");
-        const newPrice = pricePerItem * quantity;
-
-        // de tre som number uden kr string 
-        priceElement.textContent = `${newPrice} kr`;
+    // Funktion til at opdatere total prisen
+    function updateTotalPrice() {
+        let total = 0;
+        document.querySelectorAll(".item-price").forEach(priceElement => {
+            let price = parseInt(priceElement.textContent.replace(" kr", ""));
+            total += price;
+        });
+        document.querySelector(".total-price").textContent = `${total} kr`;
     }
-
-
+    
 
     // Funktion til at fjerne et element fra kurven
     function removeItem(item) {
         item.remove();
+        updateTotalPrice(); // Opdater totalprisen efter fjernelse
         checkCartEmpty();
     }
 
