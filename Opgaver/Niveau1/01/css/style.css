@@ -51,3 +51,20 @@ label {
 #my-button:focus {
 	outline: none;
 }
+
+/*
+
+#my-button.click {
+	background-color: #7f7;
+}
+
+
+
+specificity points
+element = 1 
+class = 10
+id = 100
+inline = 1000
+!important = 10000 
+
+*/
