@@ -1,81 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-a {
-    color: #8093A7;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-decoration:none
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
 }
 
-.breadcrumbs {
-    width: 80%;
-    max-width: 800px;
-    margin: 2em auto;
-    display: grid;
-    grid: 1fr / repeat(4, 1fr);
-    gap: 1%;
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
-.pointer {
-    height: 80px;
-    position: relative;
-    background: #F3F5FA;
-    display: flex;
-    gap: 8px;
-    padding-left: 10px;
-    justify-content: center;
-    align-items: center;
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #fff;
+    width: 1440px;
 }
 
-.pointer:before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 30px solid white;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
+/* fonts */
+
+.roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-#first:before {
-    border-left: none;
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #24282a;
 }
 
-#first {
-    border-bottom-left-radius: 16px;
-    border-top-left-radius: 16px;
+.h2-light {
+    color: #939fa4;
+    font-weight: 300;
+    line-height: 56px;
 }
 
-.pointer:after {
-    content: "";
-    position: absolute;
-    right: -29px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 30px solid #F3F5FA;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    z-index: 1
+.h2-48px {
+    font-size: 20px;
+    font-weight: 700;
+    color: #24282a;
 }
 
-#last:after {
-    border-left: none;
+p {
+    font-size: 16px;
 }
 
-#last {
-    border-bottom-right-radius: 16px;
-    border-top-right-radius: 16px;
+.button {
+    font-family: Rubik, "open sans";
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    border-radius: 30px;
+    background: linear-gradient(227deg, #ffe9e9 27.89%, #f9c4d2 83.86%);
+    box-shadow: 0 20px 40px 0 rgba(13, 18, 39, 0.3);
+    padding: 21px;
+    cursor: pointer;
+    width: 169px;
+    height: 60px;
 }
 
-.currentbreadcrumb, .pointer:hover {
-    background: #F9C4D2;
-    color: #fff;
-}
-
-.currentbreadcrumb:after, .pointer:hover:after  {
-    border-left: 30px solid #F9C4D2;
+.button--payment {
+    margin-left: 1125px;
+    padding: 21px 33px;
+    
 }
 
 .cart {
@@ -149,7 +143,7 @@ h1 {
     color: #a7b0b4;
 }
 
-.item-price, .item-price--total {
+.item-price, .total-price {
     font-size: 18px;
     font-weight: 700;
     color: #24282a;
@@ -216,396 +210,3 @@ h1 {
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url('/css/button.css');
-
-/* ===============
-   Global Styles
-=============== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-body {
-    margin: 0;
-    font-family: "Rubik", sans-serif;
-    background-color: #fff;
-    width: 1440px;
-}
-
-/* fonts */
-
-.roboto-medium {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #24282a;
-}
-
-.h2-light {
-    color: #939fa4;
-    font-weight: 300;
-    line-height: 56px;
-}
-
-.h2-48px {
-    font-size: 20px;
-    font-weight: 700;
-    color: #24282a;
-}
-
-p {
-    font-size: 16px;
-}
-
-.logo {
-    width: 122px;
-    height: 55px;
-}
-
-/* Navigation header */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffe6e6;
-    height: 65px;
-    padding-right: 232px;
-}
-
-.logo {
-    width: 122px;
-    height: 55px;
-    margin-left: 373px;
-    margin-right: 259px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    margin-right: 232px;
-    align-items: center;
-}
-
-.menu li {
-    height: 100%;
-    width: 120px;
-}
-
-.menu a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    position: relative; /* Nødvendig for at placere ::after relativt til linket */
-}
-
-.cart-icon {
-    width: 22px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.burgermenu {
-    display: none;
-}
-
-.burgermenu--footer {
-    display: none;
-}
-
-
-.menu li.dropdown {
-    height: 50px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Nødvendigt for at placere dropdown absolut */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%; /* Sørg for, at dropdown vises under forældre-elementet */
-    left: 0;
-    background-color: #f9c4d2;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none; 
-    
-}
-
-.dropdown-content li a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    display: block; /* Sørg for, at links fylder hele området */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    width: 120px;
-}
-
-.dropdown-content li:hover {
-    background-color: #ffe9e9;
-    text-decoration: none;
-}
-
-
-/* Pseudo-element til underline */
-
-.menu a.current::after {
-    content: "";
-    position: absolute;
-    left: 50%; /* Start i midten af teksten */
-    transform: translateX(-50%); /* Centrer linjen */
-    bottom: -23px;
-    width: 120px; /* Fast bredde */
-    height: 6px;
-    background-color: #f9c4d2;
-    transition: width 0.3s ease;
-}
-
-.menu a::after {
-    content: "";
-    position: absolute;
-    left: 50%; /* Start i midten af teksten */
-    transform: translateX(-50%); /* Centrer linjen */
-    bottom: -23px;
-    width: 0;
-    height: 6px;
-    background-color: #f9c4d2;
-    transition: width 0.3s ease;
-}
-
-/* Hover-effekt */
-.menu a:hover::after {
-    width: 120px;
-}
-
-.menu a.drop::after {
-    content: none; /* Fjern pseudo-elementet */
-}
-
-.menu a.dropdown::after {
-    content: none;
-}
-
-/* Breadcrumbs (Kurv, Betaling) */
-
-.breadcrumbs {
-    margin-top: 50px;
-    margin-bottom: 49px;
-    background-color: #fff;
-}
-
-/* Newsletter */
-
-.newsletter-section {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: -8.5em;
-}
-
-.newsletter-section h2 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #24282a;
-    margin-bottom: 52px;
-}
-
-.newsletter-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email-input {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    width: 770px;
-    height: 100px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.fa-envelope {
-    padding-left: 39px;
-    padding-right: 10px;
-    color: #92d5f6;
-}
-
-#email {
-    font-size: 16px;
-    font-weight: 500;
-    color: #a7b0b4;
-    border: none;
-}
-
-.button--subscribe {
-    border: none;
-    width: 200px;
-    height: 80px;
-    margin-left: 330px;
-    border-radius: 50px;
-    padding: 30px 64px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Rubik, "open sans";
-    cursor: pointer;
-    background: linear-gradient(227deg, #ffe9e9 27.89%, #f9c4d2 83.86%);
-}
-
-.button--subscribe:hover {
-    transform: scale(1.2);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-
-/* Footer - Navigation */
-
-footer {
-    margin-top: 18em;
-    background-color: #f5f7f9;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    height: 389px;
-}
-
-.footer-logo {
-    width: 245px;
-    height: 110px;
-    margin-left: 61px;
-    margin-right: 172px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #f5f7f9;
-}
-
-.footer-content img {
-    margin-right: 178px;
-    margin-bottom: 133px;
-    width: 244px;
-    height: 110px;
-}
-
-.menu--footer {
-    justify-content: center;
-    align-items: center;
-    padding-top: 12px;
-    
-}
-
-.menu--footer li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #92d5f6;
-    padding-top: 23px;
-    width: 120px;
-    height: 65px;
-    border-radius: 5px;
-}
-
-.menu--footer li a:hover {
-    background-color: #f9c4d2;
-    box-shadow: 0px 20px 40px 0px rgba(13, 18, 39, 0.3);
-    color: #fff;
-}
-
-.menu--footer a::after {
-    display: none;
-}
-
-.menu--footer a.current {
-    background-color: #f9c4d2;
-    box-shadow: 0px 20px 40px 0px rgba(13, 18, 39, 0.3);
-    color: #fff;
-}
-
-/* insta */
-
-.title-insta {
-    text-align: center;
-    padding-bottom: 90px;
-}
-
-.instagram-logo {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0;
-    width: 1198px;
-    margin: 0 auto;
-    margin-bottom: 200px;
-}
-
-.grid-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.grid-container img:hover {
-    transform: scale(1.15);
-    border-radius: 3px;
-    border: 5px solid #fff;
-}
-
-.button {
-    font-family: Rubik, "open sans";
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    border-radius: 30px;
-    background: linear-gradient(227deg, #ffe9e9 27.89%, #f9c4d2 83.86%);
-    box-shadow: 0 20px 40px 0 rgba(13, 18, 39, 0.3);
-    padding: 21px;
-    cursor: pointer;
-    width: 169px;
-    height: 60px;
-}
-
-.button--payment {
-    margin-left: 1125px;
-    padding: 21px 33px;
-    
-}
