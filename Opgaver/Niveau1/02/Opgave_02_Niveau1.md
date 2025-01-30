@@ -17,16 +17,16 @@
 
 ## Ekstraopgave
 
-I matematik må man ikke dele med 0. Vi er derfor nødt til at forhindre dét i at ske i koden.
+	I matematik må man ikke dele med 0. Vi er derfor nødt til at forhindre dét i at ske i koden.
 
-* Tag en kopi af din funktion (bare i samme JS fil) og kald kopien `beregnForhold2`:
+	* Tag en kopi af din funktion (bare i samme JS fil) og kald kopien `beregnForhold2`:
 
-* I den nye funktion, tjek om `b` er 0:
+	* I den nye funktion, tjek om `b` er 0:
 
-	* Hvis den er, så skal den sende `null` tilbage (som betyder "ingen værdi").
+		* Hvis den er, så skal den sende `null` tilbage (som betyder "ingen værdi").
 
-	* Hvis ikke, så giv den lov at dividere og sende resultatet tilbage.
+		* Hvis ikke, så giv den lov at dividere og sende resultatet tilbage.
 
-* Kald den nye funktion, læg resultatet i en variabel og udskriv variablen i konsollen.
+	* Kald den nye funktion, læg resultatet i en variabel og udskriv variablen i konsollen.
 
-* Du må ikke slette den gamle funktion og du må heller ikke udkommentere den.
+	* Du må ikke slette den gamle funktion og du må heller ikke udkommentere den.

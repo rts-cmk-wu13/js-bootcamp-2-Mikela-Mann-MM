@@ -41,14 +41,17 @@ label {
 		padding-left: 20px;
 	}
 
-#buttons button {
-	width: 30px;
-	height: 30px;
+#my-button {
+	padding: 8px;
 	background-color: #eee;
 	border: 1px solid #aaa;
 	border-radius: 5px;
 }
 
-#buttons button:focus {
+#my-button:focus {
 	outline: none;
+}
+
+.xtra_txt {
+    display: block;
 }
