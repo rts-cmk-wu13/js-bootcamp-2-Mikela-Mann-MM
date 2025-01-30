@@ -6,15 +6,18 @@ Jeg syntes det gik rigtig godt. Opgaven var nem nok. Normalt ville jeg dog have 
 
 ## Niveau 1 - Opgave 02
 
+Denne opgave tog mig lidt tid. 
+
 ## Niveau 1 - Opgave 03
 
-
+Vi har tidligere arbejdet rigtig meget med read more/read less funktion.
 
 
 
 ## Niveau 2 - Opgave 01
 
-
+Opgaven er egentlig ret lige til, men jeg havde linket forkert til min css fil, så det tog mig ret langt tid at blive færdig
 
 ## Niveau 2 - Opgave 02
 
+Vi har tidligere lavet en lignende opgave, så denne var faktisk den mest enkle for mig. 
