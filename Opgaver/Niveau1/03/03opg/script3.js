@@ -7,12 +7,16 @@ button.addEventListener("click", function() {
 
 function skjulElementViaCssSelector(cssSelector) {
     const element = document.querySelector(cssSelector); // Find elementet via cssSelector
-    if (element) { // Hvis elementet findes
+    if (element) element.style.display = "none"
+        
+}
+       /*  { // Hvis elementet findes
         if (element.style.display === "block") {
             element.style.display = "none"; // Skjul elementet
         } else {
             element.style.display = "block"; // Vis elementet
         }
-    }
-}
+    } */
 
+
+// skjulElementViaCssSelector(".headline")
