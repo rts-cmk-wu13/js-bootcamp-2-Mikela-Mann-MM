@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartContainer = document.querySelector(".cart-container");
     const cartItems = document.querySelectorAll(".cart-item");
-    const emptyCartMessage = "Du har i øjeblikket ingen varer i din kurv";
+    // const emptyCartMessage = "Du har i øjeblikket ingen varer i din kurv";
     const paymentButton = document.querySelector(".button--payment");
 
     if (!paymentButton) {
@@ -103,3 +103,25 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial kontrol
     checkCartEmpty();
 });
+
+/* let increaseBtn = document.querySelector(".card__increase")
+let decreaseBtn = document.querySelector(".card__decrease")
+let countElm = Number(document.querySelector(".card__item-count").textContent)
+let count = Number(countElm.textContent)
+let price = Number(document.querySelector(".card__price-value").textContent)
+let totalPriceElm = document.querySelector(".card__total-price")
+
+function updateCountAndPrice(count, price) {
+    countElm.textContent = count;
+    totalPriceElm.textContent = count * price; 
+}
+
+increaseBtn.addEventListener("click", function(){
+    count++;
+    updateCountAndPrice(count, price);
+})
+
+decreaseBtn.addEventListener("click", function(){
+    if(count > 0) count--;
+    updateCountAndPrice(count, price);
+}) */
