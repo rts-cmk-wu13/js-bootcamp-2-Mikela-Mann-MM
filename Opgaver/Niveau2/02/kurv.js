@@ -125,3 +125,44 @@ decreaseBtn.addEventListener("click", function(){
     if(count > 0) count--;
     updateCountAndPrice(count, price);
 }) */
+
+
+/* 
+// version 2 
+   
+
+let price = Number(document.querySelector(".card__price-value").textContent)
+let totalPriceElm = document.querySelector(".card__total-price")
+
+
+let cards = document.querySelectorAll(".card")
+cards.forEach(function(card) {
+    let increaseBtn = card.querySelector(".card__increase")
+    let decreaseBtn = card.querySelector(".card__decrease")
+    let countElm = card.querySelector(".card__item-count")
+    let count = Number(countElm.textContent)
+    let price = Number(card.querySelector(".card__price-value").textContent)
+    let totalPriceElm = card.querySelector(".card__total-price")
+
+
+
+    increaseBtn.addEventListener("click", function(){
+        count++;
+        updateCountAndPrice(count, price);
+    })
+    
+    decreaseBtn.addEventListener("click", function(){
+        if(count > 0) count--;
+        updateCountAndPrice(count, price);
+    }) 
+    
+    function updateCountAndPrice(count, price) {
+        countElm.textContent = count;
+        totalPriceElm.textContent = count * price; 
+    }
+
+})
+
+
+
+ */
